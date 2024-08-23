@@ -1,0 +1,51 @@
+#Python Assignment
+
+correct_username = "saul"
+correct_password = "123"
+
+
+username = input("username? ")
+print(" ")
+password = input("password? ")
+print(" ")
+
+
+if username == correct_username and password == correct_password:
+  print("good")
+
+
+else:
+  print("you have 5 tries")
+  print(" ")
+  while True:
+    print("no")
+    print(" ")
+    username = input("username? ")
+    print(" ")
+    password = input("password? ")
+    print(" ")
+    if username == correct_username and password == correct_password:
+      print("good")
+      break
+
+    
+    tries = 4
+    while tries > 0:
+        print("no")
+        print(" ")
+        username = input("username? ")
+        print(" ")
+        password = input("password? ")
+        print(" ")
+        if username == correct_username and password == correct_password:
+            print("good")
+            break
+
+
+        else:
+            tries -= 1
+            print("you have", tries, "tries left")
+            print(" ")
+    if tries == 0:
+      break
+
